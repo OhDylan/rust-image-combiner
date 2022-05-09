@@ -1,4 +1,5 @@
 fn get_nth_arg(n: usize) -> String {
+    print!("{:?}", std::env::args());
     std::env::args().nth(n).unwrap()
 }
 
